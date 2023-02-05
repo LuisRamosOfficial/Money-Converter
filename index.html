@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="styles.css" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Money Converter</title>
+	</head>
+	<body>
+		<h1>Money Converter</h1>
+		<div class="wrapper">
+			<div class="from">
+				<span>
+					<h2>From:</h2>
+					<select onchange="Converter()" name="from" id="fromselect">
+						<option value="1">$ - US Dollar 🇺🇸</option>
+						<option value="0.92631">€ - Euro 🇪🇺</option>
+						<option value="0.82932">£ - British Pound 🇬🇧</option>
+						<option value="22.1334">Db - STP Dobra 🇸🇹</option>
+						<option value="5.1506">R$ - Brazil Real 🇧🇷</option>
+					</select>
+				</span>
+				<input type="number" name="value" id="frominput" />
+			</div>
+			<img id="Switcher" onclick="Switcher()" src="switcher.png" alt="Switch" />
+			<div class="to">
+				<span>
+					<h2>To:</h2>
+					<select onchange="Converter()" name="to" id="toselect">
+						<option value="1">$ - US Dollar 🇺🇸</option>
+						<option value="0.92631">€ - Euro 🇪🇺</option>
+						<option value="0.82932">£ - British Pound 🇬🇧</option>
+						<option value="22.1334">Db - STP Dobra 🇸🇹</option>
+						<option value="5.1506">R$ - Brazil Real 🇧🇷</option>
+					</select>
+				</span>
+				<input disabled type="number" name="value" id="toinput" />
+			</div>
+		</div>
+        <script src="main.js"></script>
+	</body>
+</html>
